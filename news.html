@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资讯动态 - 广西供销大宗商品交易信息服务平台</title>
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部导航栏（与首页一致） -->
+  <header>
+    <div class="main-container">
+      <div class="header-login">
+        <div class="user-bar">
+          <div class="user-bar-left">
+            欢迎来到广西供销资源交易中心！
+          </div>
+          <div class="user-bar-right">
+            <div class="lang clearfix">
+              <span class="lang-switch active">简</span>
+              <span class="lang-switch">繁</span>
+              <span class="lang-switch">EN</span>
+            </div>
+            <span class="service-phone">服务热线：0771-5852035</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="nav-bar">
+          <div class="nav-logo">
+            <a href="index.html">
+              <img src="images/web-logo.png" alt="广西供销资源交易中心" style="vertical-align:middle;" />
+            </a>
+          </div>
+          <div class="nav-search">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-btn">搜索</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-bar">
+        <ul class="menu-list clearfix">
+          <li class="menu-item"><a href="index.html">首页</a></li>
+          <li class="menu-item active"><a href="#">资讯动态</a></li>
+          <li class="menu-item has-submenu">
+            <a href="#">党建动态</a>
+            <ul class="submenu">
+              <li><a href="#">党建要闻</a></li>
+              <li><a href="#">党风廉政建设</a></li>
+              <li><a href="#">专题专栏</a></li>
+              <li><a href="#">举报方式</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">交易大厅</a>
+            <ul class="submenu">
+              <li><a href="#">农村产权交易</a></li>
+              <li><a href="#">供销大宗商品交易</a></li>
+              <li><a href="#">拍卖大厅</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">智慧政务</a>
+            <ul class="submenu">
+              <li><a href="#">智慧林业</a></li>
+              <li><a href="#">智慧农业农村</a></li>
+              <li><a href="#">智慧税务</a></li>
+              <li><a href="#">智慧自然资源</a></li>
+              <li><a href="#">智慧不动产中心</a></li>
+              <li><a href="#">智慧住建</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">供应链金融</a>
+            <ul class="submenu">
+              <li><a href="#">智慧人民银行</a></li>
+              <li><a href="#">智慧金融</a></li>
+              <li><a href="#">智慧担保</a></li>
+              <li><a href="#">智慧保险</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">招商推介</a>
+            <ul class="submenu">
+              <li><a href="#">产权转让</a></li>
+              <li><a href="#">企业增资</a></li>
+              <li><a href="#">资产转让</a></li>
+              <li><a href="#">资产出租</a></li>
+              <li><a href="#">招投标</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">专业服务</a>
+            <ul class="submenu">
+              <li><a href="#">土地测绘评估</a></li>
+              <li><a href="#">林业调查设计</a></li>
+              <li><a href="#">快递物流</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">智慧基金</a>
+            <ul class="submenu">
+              <li><a href="#">壮大村级集体经济基金</a></li>
+              <li><a href="#">社会福利基金</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">深圳交易</a></li>
+          <li class="menu-item"><a href="#">东盟(ASEAN)</a></li>
+          <li class="menu-item has-submenu">
+            <a href="#">关于我们</a>
+            <ul class="submenu">
+              <li><a href="#">中心简介</a></li>
+              <li><a href="#">组织架构</a></li>
+              <li><a href="#">发展历程</a></li>
+              <li><a href="#">联系我们</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 资讯动态内容区域 -->
+  <main style="min-height: 500px; padding: 0; ">
+    <!-- Banner区 -->
+    <div class="news-banner">
+      <div class="news-banner-content">
+        <div class="news-banner-en">CONSULTING NEWS</div>
+        <div class="news-banner-zh">资讯动态</div>
+      </div>
+    </div>
+    <div class="main-container">
+      <!-- Tab区 -->
+      <div class="news-tabs-bar">
+        <div class="news-tabs-bar-inner">
+          <div class="news-tabs-bar-tab active">中心动态</div>
+          <div class="news-tabs-bar-tab">行业资讯</div>
+          <div class="news-tabs-bar-tab">通知公告</div>
+          <div class="news-tabs-bar-tab">政策法规</div>
+        </div>
+      </div>
+      <!-- 中心动态内容区域 -->
+      <div class="news-center-carousel-section" id="news-center-carousel-section">
+        <div class="news-center-carousel-container">
+          <div class="news-center-carousel">
+            <!-- 轮播项 -->
+            <div class="news-center-carousel-item active">
+              <div class="news-center-carousel-img-wrap">
+                <img src="images/news/qwfb.png" alt="新闻图片1" class="news-center-carousel-img">
+              </div>
+              <div class="news-center-carousel-content">
+                <div class="news-center-carousel-title">创新渠道布局 赋能品牌打造——梧州市供销社着力打造供销产品专柜</div>
+                <div class="news-center-carousel-summary">第二十一届中国（深圳）国际文化产业博览交易会在深圳国际会展中心举办。在粤桂协作的推动下，资源县供销社组织10家优秀企业携百余款特色产品参展，向广大客商展示资源县农文旅产业的发展成果。“油茶配山歌，仿佛置身资源苗寨！”一位客商赞叹道。身着苗族盛装的姑娘们一边唱着原生态山歌，一边为大家奉上现场制作的资源非遗油茶，香气四溢，现场气氛热烈、赞不绝口。展区内，非遗折扇、高山有机茶油、黄金胚芽米、黄精茶、野生金银花茶等特色农产品，里山森谷“森林疗愈”、明仕旅游“森林康养疗休养”路线、天门山景区高空玻璃栈道等特色景点，这些来自丹霞地貌区域的特色产品吸引了众多客商驻足品鉴、洽谈。</div>
+                <div class="news-center-carousel-meta">
+                  <span class="news-center-carousel-date">2025-04-08</span>
+                  <a href="#" class="news-center-carousel-link">
+                    查看详情 <img src="images/more-grey.png" alt="箭头" class="news-center-carousel-link-arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 新增轮播项2 -->
+            <div class="news-center-carousel-item">
+              <div class="news-center-carousel-img-wrap">
+                <img src="images/news/news2.png" alt="新闻图片2" class="news-center-carousel-img">
+              </div>
+              <div class="news-center-carousel-content">
+                <div class="news-center-carousel-title">广东湛江市社：供销“荔”量打通全球甜蜜通道</div>
+                <div class="news-center-carousel-summary">广东湛江市供销社积极推动荔枝出口，打通全球销售通道，助力农民增收，推动地方特色农产品走向国际市场。</div>
+                <div class="news-center-carousel-meta">
+                  <span class="news-center-carousel-date">2025-03-28</span>
+                  <a href="#" class="news-center-carousel-link">
+                    查看详情 <img src="images/more-grey.png" alt="箭头" class="news-center-carousel-link-arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 新增轮播项3 -->
+            <div class="news-center-carousel-item">
+              <div class="news-center-carousel-img-wrap">
+                <img src="images/news/news3.png" alt="新闻图片3" class="news-center-carousel-img">
+              </div>
+              <div class="news-center-carousel-content">
+                <div class="news-center-carousel-title">杭州茶叶研究所提出并牵头推进ISO修订发布《绿茶 术语》国际标准</div>
+                <div class="news-center-carousel-summary">杭州茶叶研究所积极参与国际标准制定，推动中国茶叶标准走向世界，提升中国茶产业国际影响力。</div>
+                <div class="news-center-carousel-meta">
+                  <span class="news-center-carousel-date">2025-03-15</span>
+                  <a href="#" class="news-center-carousel-link">
+                    查看详情 <img src="images/more-grey.png" alt="箭头" class="news-center-carousel-link-arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 可添加更多轮播项 -->
+          </div>
+          <!-- 指示器 -->
+          <div class="news-center-carousel-indicators">
+            <span class="news-center-carousel-indicator active"></span>
+            <span class="news-center-carousel-indicator"></span>
+            <span class="news-center-carousel-indicator"></span>
+          </div>
+        </div>
+      </div>
+      <!-- 行业资讯内容区域 -->
+      <div class="news-industry-section" id="news-industry-section" style="display:none;">
+        <div class="news-center-list-section">
+          <div class="news-center-list-container">
+            <div class="news-center-list-item">
+              <div class="news-center-list-item-inner">
+                <div class="news-center-list-img-wrap">
+                  <img src="images/news/news1.png" alt="行业资讯1" class="news-center-list-img">
+                </div>
+                <div class="news-center-list-content">
+                  <div class="news-center-list-title">全国供销合作社系统深化改革取得新进展</div>
+                  <div class="news-center-list-summary">全国供销合作社系统深化改革工作稳步推进，各地供销合作社在服务乡村振兴、促进农村现代化方面发挥了重要作用。</div>
+                </div>
+                <div class="news-center-list-date">
+                  <div class="news-center-list-date-md">04.10</div>
+                  <div class="news-center-list-date-year-wrap">
+                    <span class="news-center-list-date-line"></span>
+                    <span class="news-center-list-date-year">2025</span>
+                    <span class="news-center-list-date-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 更多行业资讯列表项... -->
+          </div>
+        </div>
+      </div>
+      <!-- 通知公告内容区域 -->
+      <div class="news-notice-section" id="news-notice-section" style="display:none;">
+        <div class="news-center-list-section">
+          <div class="news-center-list-container">
+            <div class="news-center-list-item">
+              <div class="news-center-list-item-inner">
+                <div class="news-center-list-img-wrap">
+                  <img src="images/news/news2.png" alt="通知公告1" class="news-center-list-img">
+                </div>
+                <div class="news-center-list-content">
+                  <div class="news-center-list-title">关于2024年度农村产权交易业务培训的通知</div>
+                  <div class="news-center-list-summary">为进一步提升农村产权交易业务水平，规范交易流程，提高服务质量，中心将于2024年2月举办农村产权交易业务培训。</div>
+                </div>
+                <div class="news-center-list-date">
+                  <div class="news-center-list-date-md">04.08</div>
+                  <div class="news-center-list-date-year-wrap">
+                    <span class="news-center-list-date-line"></span>
+                    <span class="news-center-list-date-year">2025</span>
+                    <span class="news-center-list-date-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 更多通知公告列表项... -->
+          </div>
+        </div>
+      </div>
+      <!-- 政策法规内容区域 -->
+      <div class="news-policy-section" id="news-policy-section" style="display:none;">
+        <div class="news-center-list-section">
+          <div class="news-center-list-container">
+            <div class="news-center-list-item">
+              <div class="news-center-list-item-inner">
+                <div class="news-center-list-img-wrap">
+                  <img src="images/news/news3.png" alt="政策法规1" class="news-center-list-img">
+                </div>
+                <div class="news-center-list-content">
+                  <div class="news-center-list-title">《农村产权交易管理办法》正式发布实施</div>
+                  <div class="news-center-list-summary">为规范农村产权交易行为，保护交易各方合法权益，促进农村产权交易市场健康发展，国家相关部门联合发布了《农村产权交易管理办法》。</div>
+                </div>
+                <div class="news-center-list-date">
+                  <div class="news-center-list-date-md">04.05</div>
+                  <div class="news-center-list-date-year-wrap">
+                    <span class="news-center-list-date-line"></span>
+                    <span class="news-center-list-date-year">2025</span>
+                    <span class="news-center-list-date-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 更多政策法规列表项... -->
+          </div>
+        </div>
+      </div>
+      <!-- 新闻列表区域 -->
+      <div class="news-center-list-section">
+        <div class="news-center-list-container">
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/jryw.png" alt="新闻缩略图1" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">环江供销 “农资直供” 到家 “铁三角” 筑牢丰收根基​</div>
+                <div class="news-center-list-summary">盛夏时节，环江毛南族自治县的麻竹进入管护关键期。近日，一辆辆满载优质肥料的大货车稳稳驶入明伦镇八面麻竹产业示范基地 —— 这不是普通的送货场景，而是环江县供销社 “农资配送服务到家” 行动的生动实践。装卸现场，供销社工作人员、基地负责人、县林业局技术人员三方齐聚，对这批肥料进行现场随机抽检封样，以严谨态度守护农资品质。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">07.22</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/cxkj.png" alt="新闻缩略图2" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">南宁市供销社助力春耕备耕</div>
+                <div class="news-center-list-summary">南宁市供销社积极组织农资供应，保障春耕生产顺利进行。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">04.08</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news3.png" alt="新闻缩略图3" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">柳州市供销社开展农产品展销活动</div>
+                <div class="news-center-list-summary">柳州市供销社举办农产品展销会，促进农产品流通，助力乡村振兴。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">04.05</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news4.png" alt="新闻缩略图4" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">桂林市供销社开展农资打假专项行动</div>
+                <div class="news-center-list-summary">桂林市供销社联合多部门开展农资打假专项行动，保障农民用上放心农资。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">03.28</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news1.png" alt="新闻缩略图5" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">贺州市供销社举办农产品推介会</div>
+                <div class="news-center-list-summary">贺州市供销社举办农产品推介会，促进本地农产品销售，助力乡村振兴。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">03.15</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news2.png" alt="新闻缩略图6" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">百色市供销社开展农技培训</div>
+                <div class="news-center-list-summary">百色市供销社组织农技专家下乡开展技术培训，提升农民种植水平。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">02.28</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news3.png" alt="新闻缩略图7" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">来宾市供销社推进农产品电商发展</div>
+                <div class="news-center-list-summary">来宾市供销社积极推进农产品电商平台建设，拓宽农产品销售渠道。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">02.10</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news4.png" alt="新闻缩略图8" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">崇左市供销社助力春耕生产</div>
+                <div class="news-center-list-summary">崇左市供销社全力保障春耕农资供应，助力农业生产顺利进行。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">01.30</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news1.png" alt="新闻缩略图9" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">玉林市供销社开展农资打假宣传</div>
+                <div class="news-center-list-summary">玉林市供销社联合相关部门开展农资打假宣传活动，提升农民识假防假能力。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">01.15</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-center-list-item">
+            <div class="news-center-list-item-inner">
+              <div class="news-center-list-img-wrap">
+                <img src="images/news/news2.png" alt="新闻缩略图10" class="news-center-list-img">
+              </div>
+              <div class="news-center-list-content">
+                <div class="news-center-list-title">防城港市供销社开展农资供应保障</div>
+                <div class="news-center-list-summary">防城港市供销社加强农资供应保障，确保春耕生产顺利进行。</div>
+              </div>
+              <div class="news-center-list-date">
+                <div class="news-center-list-date-md">01.02</div>
+                <div class="news-center-list-date-year-wrap">
+                  <span class="news-center-list-date-line"></span>
+                  <span class="news-center-list-date-year">2025</span>
+                  <span class="news-center-list-date-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 分页组件 -->
+      <div class="news-center-pagination">
+        <button class="news-center-pagination-btn" disabled>上一页</button>
+        <span class="news-center-pagination-page active">1</span>
+        <span class="news-center-pagination-page">2</span>
+        <span class="news-center-pagination-page">3</span>
+        <span class="news-center-pagination-page">4</span>
+        <span class="news-center-pagination-page">5</span>
+        <button class="news-center-pagination-btn">下一页</button>
+      </div>
+      <!-- 后续tab区和列表区在这里添加 -->
+    </div>
+  </main>
+
+  <!-- 页脚（与首页一致） -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-left">
+          <div class="footer-title">广西供销大宗商品交易信息服务平台</div>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span class="contact-label">服务热线：</span>
+              <span class="contact-value">0771-5852038</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">联系地址：</span>
+              <span class="contact-value">中国（广西）自由贸易试验区南宁片区五象大道403号富雅国际金融中心G1栋二十五层2513号</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">电子邮箱：</span>
+              <span class="contact-value">Lanyun123@gxlydd.cn</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">工作时间：</span>
+              <span class="contact-value">08:00-18:00（GMT+8）</span>
+            </div>
+          </div>
+          <div class="footer-qrcode">
+            <img src="images/gzh.png" alt="蓝云地带公众号" class="qrcode-img">
+            <div class="qrcode-text">蓝云地带公众号</div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-sitemap">
+            <div class="sitemap-row">
+              <div class="sitemap-column">
+                <div class="sitemap-title">资讯动态</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">中心动态</a>
+                  <a href="#" class="sitemap-link">行业资讯</a>
+                  <a href="#" class="sitemap-link">通知公告</a>
+                  <a href="#" class="sitemap-link">政策法规</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">交易大厅</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">农村产权交易</a>
+                  <a href="#" class="sitemap-link">供销大宗商品交易</a>
+                  <a href="#" class="sitemap-link">拍卖大厅</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">智慧政务</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">智慧林业</a>
+                  <a href="#" class="sitemap-link">智慧农业农村</a>
+                  <a href="#" class="sitemap-link">智慧税务</a>
+                  <a href="#" class="sitemap-link">智慧自然资源</a>
+                  <a href="#" class="sitemap-link">智慧不动产中心</a>
+                  <a href="#" class="sitemap-link">智慧住建</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">供应链金融</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">智慧人民银行</a>
+                  <a href="#" class="sitemap-link">智慧金融</a>
+                  <a href="#" class="sitemap-link">智慧担保</a>
+                  <a href="#" class="sitemap-link">智慧保险</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">招商推介</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">产权转让</a>
+                  <a href="#" class="sitemap-link">企业增资</a>
+                  <a href="#" class="sitemap-link">资产转让</a>
+                  <a href="#" class="sitemap-link">资产出租</a>
+                  <a href="#" class="sitemap-link">招投标</a>
+                </div>
+              </div>
+            </div>
+            <div class="sitemap-row">
+              <div class="sitemap-column">
+                <div class="sitemap-title">专业服务</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">土地测绘评估</a>
+                  <a href="#" class="sitemap-link">林业调查设计</a>
+                  <a href="#" class="sitemap-link">快递物流</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">智慧基金</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">发展村级集体经济基金</a>
+                  <a href="#" class="sitemap-link">社会福利基金</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">党建动态</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">党建要闻</a>
+                  <a href="#" class="sitemap-link">党风廉政建设</a>
+                  <a href="#" class="sitemap-link">专题专栏</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <div class="sitemap-title">关于我们</div>
+                <div class="sitemap-links">
+                  <a href="#" class="sitemap-link">中心简介</a>
+                  <a href="#" class="sitemap-link">组织架构</a>
+                  <a href="#" class="sitemap-link">发展历程</a>
+                </div>
+              </div>
+              <div class="sitemap-column">
+                <!-- 空列，保持对齐 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="copyright-left">
+          <span class="copyright-text">2025 广西蓝云地带信息科技集团有限公司 版权所有</span>
+        </div>
+        <div class="copyright-right">
+          <a href="#" class="copyright-link">隐私政策</a>
+          <span class="copyright-separator">|</span>
+          <a href="#" class="copyright-link">使用条款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html> 

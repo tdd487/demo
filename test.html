@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>广西供销大宗商品交易信息服务平台</title>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/echats.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- 1. 顶部导航栏 -->
+<header>
+  <div class="main-container">
+    <!-- 用户区外层 -->
+    <div class="header-login">
+      <div class="user-bar">
+        <div class="user-bar-left">
+          欢迎来到广西供销大宗商品交易信息服务平台！
+          <!-- <div class="location-bar">
+            <img src="images/location-icon.png" class="location-icon" alt="定位" />
+            <span class="location-text">广西壮族自治区</span>
+            <img src="images/arrow-drop-down-fill.png" class="location-arrow" alt="下拉" />
+          </div> -->
+        </div>
+        <div class="user-bar-right">
+          <div class="lang clearfix">
+            <span class="lang-switch active">简</span>
+            <span class="lang-switch">繁</span>
+            <span class="lang-switch">EN</span>
+          </div>
+          <span class="service-phone">服务热线：0771-5852035</span>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航栏nav区 -->
+    <div class="header-nav">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <!-- logo图片添加链接 -->
+          <a href="index.html">
+            <img src="images/web-logo.png" alt="广西供销资源交易中心" style="vertical-align:middle;" />
+          </a>
+        </div>
+        <div class="nav-search">
+          <input type="text" class="search-input" placeholder="请输入搜索内容">
+          <button class="search-btn">搜索</button>
+        </div>
+      </div>
+    </div>
+    <!-- 菜单栏 -->
+    <div class="menu-bar">
+      <ul class="menu-list clearfix">
+        <li class="menu-item active"><a href="#">首页</a></li>
+        <li class="menu-item has-submenu">
+          <a href="news.html">资讯动态</a>
+          <ul class="submenu">
+            <li><a href="news.html">中心动态</a></li>
+            <li><a href="news.html">行业资讯</a></li>
+            <li><a href="news.html">通知公告</a></li>
+            <li><a href="news.html">政策法规</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">党建动态</a>
+          <ul class="submenu">
+            <li><a href="#">党建要闻</a></li>
+            <li><a href="#">党风廉政建设</a></li>
+            <li><a href="#">专题专栏</a></li>
+            <li><a href="#">举报方式</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">交易大厅</a>
+          <ul class="submenu">
+            <li><a href="#">农村产权交易</a></li>
+            <li><a href="#">供销大宗商品交易</a></li>
+            <li><a href="#">拍卖大厅</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">智慧政务</a>
+          <ul class="submenu">
+            <li><a href="#">智慧林业</a></li>
+            <li><a href="#">智慧农业农村</a></li>
+            <li><a href="#">智慧税务</a></li>
+            <li><a href="#">智慧自然资源</a></li>
+            <li><a href="#">智慧不动产中心</a></li>
+            <li><a href="#">智慧住建</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">供应链金融</a>
+          <ul class="submenu">
+            <li><a href="#">智慧人民银行</a></li>
+            <li><a href="#">智慧金融</a></li>
+            <li><a href="#">智慧担保</a></li>
+            <li><a href="#">智慧保险</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">招商推介</a>
+          <ul class="submenu">
+            <li><a href="#">产权转让</a></li>
+            <li><a href="#">企业增资</a></li>
+            <li><a href="#">资产转让</a></li>
+            <li><a href="#">资产出租</a></li>
+            <li><a href="#">招投标</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">专业服务</a>
+          <ul class="submenu">
+            <li><a href="#">土地测绘评估</a></li>
+            <li><a href="#">林业调查设计</a></li>
+            <li><a href="#">快递物流</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">智慧基金</a>
+          <ul class="submenu">
+            <li><a href="#">壮大村级集体经济基金</a></li>
+            <li><a href="#">社会福利基金</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">深圳交易</a></li>
+        <li class="menu-item"><a href="#">东盟(ASEAN)</a></li>
+        <li class="menu-item has-submenu">
+          <a href="#">关于我们</a>
+          <ul class="submenu">
+            <li><a href="#">中心简介</a></li>
+            <li><a href="#">组织架构</a></li>
+            <li><a href="#">发展历程</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</header>
+
+<!-- 2. 头部横幅（Banner） -->
+<section class="banner-section">
+  <div class="banner-container">
+    <div class="banner-slider">
+      <div class="banner-slide active">
+        <img src="images/banner01.jpg" alt="Banner 1">
+      </div>
+      <div class="banner-slide">
+        <img src="images/banner02.jpg" alt="Banner 2">
+      </div>
+      <div class="banner-slide">
+        <img src="images/banner03.jpg" alt="Banner 3">
+      </div>
+      <div class="banner-slide">
+        <img src="images/banner04.jpg" alt="Banner 4">
+      </div>
+      <div class="banner-slide">
+        <img src="images/banner05.jpg" alt="Banner 5">
+      </div>
+      <div class="banner-slide">
+        <img src="images/banner06.jpg" alt="Banner 6">
+      </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <button class="banner-btn banner-prev"></button>
+    <button class="banner-btn banner-next"></button>
+
+    <!-- 指示器 -->
+    <div class="banner-indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+      <span class="indicator" data-slide="2"></span>
+      <span class="indicator" data-slide="3"></span>
+      <span class="indicator" data-slide="4"></span>
+      <span class="indicator" data-slide="5"></span>
+    </div>
+  </div>
+</section>
+
+<!-- 新资讯动态模块 -->
+<section class="news-section-new">
+  <div class="news-section-new-container">
+    <div class="news-section-new-left">
+      <!-- 主标题栏 -->
+      <div class="news-main-title-bar">
+        <div class="news-main-title-group">
+          <img class="news-main-title-icon" src="images/zxdt-icon.png" alt="资讯动态图标">
+          <span class="news-main-title-text">资讯动态</span>
+          <img class="news-main-title-img" src="images/zxdt-title.png" alt="资讯动态图片">
+        </div>
+        <a href="#" class="news-main-title-btn">
+          <span class="news-main-title-btn-text">更多资讯</span>
+          <img class="news-main-title-btn-arrow" src="images/more-grey.png" alt="更多资讯">
+        </a>
+      </div>
+      <div class="news-content">
+        <div class="news-left">
+          <div class="news-carousel">
+            <div class="news-carousel-slider">
+              <div class="news-carousel-slide active">
+                <img src="images/news/news1.png" alt="资讯1">
+                <div class="news-carousel-caption">
+                  <span class="news-carousel-title">全区供销社系统2025年第一季度经济运行调度会议在南宁召开</span>
+                </div>
+              </div>
+              <div class="news-carousel-slide">
+                <img src="images/news/news2.png" alt="资讯2">
+                <div class="news-carousel-caption">
+                  <span class="news-carousel-title">广东湛江市社：供销“荔”量打通全球甜蜜通道</span>
+                </div>
+              </div>
+              <div class="news-carousel-slide">
+                <img src="images/news/news3.png" alt="资讯3">
+                <div class="news-carousel-caption">
+                  <span class="news-carousel-title">杭州茶叶研究所提出并牵头推进 ISO修订发布《绿茶 术语》国际标准</span>
+                </div>
+              </div>
+              <div class="news-carousel-slide">
+                <img src="images/news/news4.png" alt="资讯4">
+                <div class="news-carousel-caption">
+                  <span class="news-carousel-title">南宁市江南区农业农村局启动广西农村集体资产线上交易平台培训工作</span>
+                </div>
+              </div>
+            </div>
+            <div class="news-carousel-indicators">
+              <span class="news-carousel-indicator active" data-slide="0"></span>
+              <span class="news-carousel-indicator" data-slide="1"></span>
+              <span class="news-carousel-indicator" data-slide="2"></span>
+              <span class="news-carousel-indicator" data-slide="3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="news-right">
+          <div class="news-tabs">
+            <div class="news-tab active" data-tab="0">中心动态</div>
+            <div class="news-tab" data-tab="1">行业资讯</div>
+            <div class="news-tab" data-tab="2">通知公告</div>
+            <div class="news-tab" data-tab="3">政策法规</div>
+          </div>
+          <div class="news-list-content">
+            <!-- 中心动态 -->
+            <div class="news-list news-tab-content active" data-tab="0">
+              <!-- 头条新闻 -->
+              <div class="news-item news-item-headline">
+                <div class="news-item-title">中共中央 国务院印发《加快建设农业强国规划(2024－2035年)》</div>
+                <div class="news-item-content">新华社北京4月7日电
+                  近日，中共中央、国务院印发了《加快建设农业强国规划(2024－2035年)》，并发出通知，要求各地区各部门结合实际认真贯彻落实。</div>
+              </div>
+
+              <!-- 普通新闻列表 -->
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">集体经济产业园成为乡村振兴“新引擎”？——武威市凉州区永昌镇刘沛村集体经济产业园见闻</div>
+                <div class="news-item-date">2024-01-15</div>
+              </div>
+
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">智慧政务系统正式上线运行</div>
+                <div class="news-item-date">2024-01-12</div>
+              </div>
+
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">供应链金融服务平台建设启动</div>
+                <div class="news-item-date">2024-01-10</div>
+              </div>
+
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">招商推介活动取得丰硕成果</div>
+                <div class="news-item-date">2024-01-08</div>
+              </div>
+
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">专业服务团队建设不断加强</div>
+                <div class="news-item-date">2024-01-05</div>
+              </div>
+
+              <!-- 更多资讯链接 -->
+
+            </div>
+            <!-- 行业资讯 -->
+            <div class="news-list news-tab-content" data-tab="1">
+              <div class="news-item news-item-headline">
+                <div class="news-item-title">全国供销合作社系统深化改革取得新进展</div>
+                <div class="news-item-content">
+                  全国供销合作社系统深化改革工作稳步推进，各地供销合作社在服务乡村振兴、促进农村现代化方面发挥了重要作用。通过深化改革，供销合作社的服务能力和水平得到显著提升。</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">大宗商品交易市场发展趋势分析</div>
+                <div class="news-item-date">2024-01-14</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">农村产权交易规范化建设经验交流</div>
+                <div class="news-item-date">2024-01-11</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">智慧农业技术应用推广情况</div>
+                <div class="news-item-date">2024-01-09</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">供应链金融创新模式探讨</div>
+                <div class="news-item-date">2024-01-07</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">农产品质量安全追溯体系建设</div>
+                <div class="news-item-date">2024-01-04</div>
+              </div>
+              <div class="news-more"><a href="#" class="news-more-link"><span class="news-more-text">更多资讯</span><img
+                      src="images/more.png" alt="更多" class="news-more-arrow"></a></div>
+            </div>
+            <!-- 通知公告 -->
+            <div class="news-list news-tab-content" data-tab="2">
+              <div class="news-item news-item-headline">
+                <div class="news-item-title">关于2024年度农村产权交易业务培训的通知</div>
+                <div class="news-item-content">为进一步提升农村产权交易业务水平，规范交易流程，提高服务质量，中心将于2024年2月举办农村产权交易业务培训，请各相关单位做好准备工作。
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">系统维护通知（2024年1月20日）</div>
+                <div class="news-item-date">2024-01-13</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">关于调整交易服务时间的公告</div>
+                <div class="news-item-date">2024-01-10</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">2024年春节放假安排通知</div>
+                <div class="news-item-date">2024-01-08</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">关于规范交易流程的重要通知</div>
+                <div class="news-item-date">2024-01-06</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">系统升级维护公告</div>
+                <div class="news-item-date">2024-01-03</div>
+              </div>
+              <div class="news-more"><a href="#" class="news-more-link"><span class="news-more-text">更多资讯</span><img
+                      src="images/more.png" alt="更多" class="news-more-arrow"></a></div>
+            </div>
+            <!-- 政策法规 -->
+            <div class="news-list news-tab-content" data-tab="3">
+              <div class="news-item news-item-headline">
+                <div class="news-item-title">《农村产权交易管理办法》正式发布实施</div>
+                <div class="news-item-content">
+                  为规范农村产权交易行为，保护交易各方合法权益，促进农村产权交易市场健康发展，国家相关部门联合发布了《农村产权交易管理办法》，该办法自发布之日起正式实施。</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">关于促进供销合作社改革发展的指导意见</div>
+                <div class="news-item-date">2024-01-12</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">农村集体产权制度改革相关政策解读</div>
+                <div class="news-item-date">2024-01-09</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">农产品质量安全法修订要点</div>
+                <div class="news-item-date">2024-01-07</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">关于完善农村金融服务体系的意见</div>
+                <div class="news-item-date">2024-01-05</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-dot"></div>
+                <div class="news-item-title">乡村振兴促进法实施条例</div>
+                <div class="news-item-date">2024-01-02</div>
+              </div>
+              <div class="news-more"><a href="#" class="news-more-link"><span class="news-more-text">更多资讯</span><img
+                      src="images/more.png" alt="更多" class="news-more-arrow"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news-section-new-right">
+      <!-- 主标题栏 -->
+      <div class="news-main-title-bar">
+        <div class="news-main-title-group">
+          <img class="news-main-title-icon" src="images/ksdh-icon.png" alt="快速导航图标">
+          <span class="news-main-title-text">快速导航</span>
+        </div>
+        <a href="#" class="news-main-title-btn">
+          <span class="news-main-title-btn-text">各地站点</span>
+          <img class="news-main-title-btn-arrow" src="images/more-grey.png" alt="各地站点">
+        </a>
+      </div>
+      <div class="news-right-content">
+        <!-- 右侧主内容容器占位 -->
+        <div id="gxMap" style="width: 348px; height: 297px;"></div>
+        <div class="site-select-bar">
+          <select id="city-select" class="site-select"><option>选择</option></select>
+          <select id="district-select" class="site-select"><option>选择</option></select>
+          <button class="site-select-btn" disabled>前往</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 智慧基金 -->
+<section class="section zhjj-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/zhjj-title.png" alt="智慧基金" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">智慧基金</span>
+        <span class="news-title-line"></span>
+      </div>
+    </div>
+    <div class="zhjj-content">
+      <section class="fund-public">
+        <h2 class="jjgydt">
+          <div class="morre">
+            <img src="images/zhjj/1.png" style="width: 32px;height: 32px;">
+            <span>基金公益动态</span>
+          </div>
+          <div class="more">
+            <span>更多动态</span>
+            <img src="images/zhjj/gengduo.png">
+          </div>
+        </h2>
+        <div class="">
+          <div id="card-list" class="card-list">
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb01.png" alt="">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb02.png" alt="" >
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb03.png" alt="">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb04.png" alt="">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb05.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div id="card-list1" class="card-list">
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb06.png" alt="" style="display: block; margin: 0 auto; max-width: 100%;">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb07.png" alt="" style="display: block; margin: 0 auto; max-width: 100%;">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb08.png" alt="" style="display: block; margin: 0 auto; max-width: 100%;">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb09.png" alt="" style="display: block; margin: 0 auto; max-width: 100%;">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <button class="donate-button"></button>
+                <img src="images/zhjj/lb10.png" alt="" style="display: block; margin: 0 auto; max-width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h2 class="jjgydt">
+          <div  class="morre"><img src="images/zhjj/2.png" style="width: 32px;height: 32px;">基金公告</div>
+          <div class="more"><span>更多</span><img src="images/zhjj/gengduo.png"></div>
+        </h2>
+        <div class="notice">
+          <ul id="notice-s" class="notice-s">
+            <li>
+              <p>感谢：刘*慧 135****8527 向“为孩子筹建梦想中心”项目捐赠现金</p>
+              <p style="color: red;">¥100.00</p>
+            </li>
+            <li>
+              <p>感谢：李* 135****8527 向“山村幼儿园计划”项目捐赠现金</p>
+              <p style="color: red;">¥50.00</p>
+            </li>
+            <li>
+              <p>感谢：韦*领 135****8527 向“助农增收帮帮队”项目捐赠现金</p>
+              <p style="color: red;">¥20.00</p>
+            </li>
+            <li>
+              <p>公告：广西供销大宗商品信息服务平台发起“为孩子筹建梦想中心”项目，15元为乡村孩子送上一份关爱</p>
+            </li>
+            <li>
+              <p>公告：广西供销大宗商品信息服务平台发起“为孩子筹建梦想中心”项目，15元为乡村孩子送上一份关爱</p>
+            </li>
+            <li>
+              <p>感谢：刘*慧 135****8527 向“为孩子筹建梦想中心”项目捐赠现金</p>
+              <p style="color: red;">¥100.00</p>
+            </li>
+          </ul>
+        </div>
+        <div class="fund-cate">
+          <h2 class="jjgydt"><div  class="morre"><img src="images/zhjj/3.png" style="width: 32px;height: 32px;">基金分类</div></h2>
+          <img style="width: 100%;height: 93px;border-radius: 4px;opacity: 1;" src="images/zhjj/jjfl01.png"/>
+          <img style="width: 100%;height: 93px;border-radius: 4px;opacity: 1;"src="images/zhjj/jjfl01.png"/>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 交易大厅介绍 -->
+<section class="section jydt-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/jydt-title.png" alt="交易大厅" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">交易大厅</span>
+        <span class="news-title-line"></span>
+      </div>
+    </div>
+    <div class="jydt-cards">
+      <div class="jydt-card">
+        <img class="jydt-card-img" src="images/nccq-icon.png" alt="农村产权交易">
+        <div class="jydt-card-title">农村产权交易</div>
+        <div class="jydt-card-desc">林票交易、产权交易、产权交易竞价、鉴证公告</div>
+        <a href="#" class="jydt-card-link">查看 <img src="images/more.png" class="jydt-card-arrow" alt="更多"></a>
+      </div>
+      <div class="jydt-card">
+        <img class="jydt-card-img" src="images/dzsp-icon.png" alt="供销大宗商品交易">
+        <div class="jydt-card-title">供销大宗商品交易</div>
+        <div class="jydt-card-desc">期货交易、预采购、预销售、竞价交易、供销直供商城</div>
+        <a href="#" class="jydt-card-link">查看 <img src="images/more.png" class="jydt-card-arrow" alt="更多"></a>
+      </div>
+      <div class="jydt-card">
+        <img class="jydt-card-img" src="images/pmdt-icon.png" alt="拍卖大厅">
+        <div class="jydt-card-title">拍卖大厅</div>
+        <div class="jydt-card-desc">涉案及罚没资产处置</div>
+        <a href="#" class="jydt-card-link">查看 <img src="images/more.png" class="jydt-card-arrow" alt="更多"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 政务快捷入口 -->
+<section class="section zw-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/zhzw-title.png" alt="智慧政务快捷入口" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">智慧政务大厅</span>
+        <span class="news-title-line"></span>
+      </div>
+    </div>
+    <div class="zw-quick-entries">
+      <div class="zw-quick-row">
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zhly-icon.png" alt="智慧林业">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧林业</div>
+            <div class="zw-quick-desc">林权交易、林业资源管理、林业政务服务</div>
+          </div>
+        </div>
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zhnc-icon.png" alt="智慧农业农村">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧农业农村</div>
+            <div class="zw-quick-desc">农业信息化、农业补贴等综合服务</div>
+          </div>
+        </div>
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zhsw-icon.png" alt="智慧税务">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧税务</div>
+            <div class="zw-quick-desc">税务咨询、办理、查询等一站式服务</div>
+          </div>
+        </div>
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zrzy-icon.png" alt="智慧自然资源">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧自然资源</div>
+            <div class="zw-quick-desc">土地、矿产、水资源等要素市场化配置</div>
+          </div>
+        </div>
+      </div>
+      <div class="zw-quick-row">
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/bdc-icon.png" alt="智慧不动产登记服务中心">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧不动产登记服务中心</div>
+            <div class="zw-quick-desc">不动产登记、交易、查询一站式办理</div>
+          </div>
+        </div>
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zhzj-icon.png" alt="智慧住建">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧住建</div>
+            <div class="zw-quick-desc">工程建设项目审批、施工许可、竣工验收等</div>
+          </div>
+        </div>
+        <div class="zw-quick-card">
+          <img class="zw-quick-img" src="images/zhka-icon.png" alt="智慧林业">
+          <div class="zw-quick-info">
+            <div class="zw-quick-title">智慧口岸</div>
+            <div class="zw-quick-desc">口岸通关、物流协同、跨境贸易数字化服务</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 供应链金融 -->
+<section class="section scjj-section">
+  <div class="main-container">
+    <div class="scjj-cards">
+      <div class="scjj-card scjj-card-title">
+        <div class="scjj-title">供应链金融</div>
+        <img class="scjj-title-img" src="images/gyljr-title.png" alt="供应链金融">
+        <div class="scjj-title-bar"></div>
+      </div>
+      <div class="scjj-card scjj-card-bg" style="background-image:url('images/gj-bg1.png')">
+        <div class="scjj-card-center">
+          <img class="scjj-icon" src="images/rmyh-icon.png" alt="智慧人民银行">
+          <div class="scjj-card-label">智慧人民银行</div>
+          <a href="#" class="scjj-card-more"><span>查看</span><img src="images/more-bai.png" alt="查看更多"></a>
+        </div>
+      </div>
+      <div class="scjj-card scjj-card-bg" style="background-image:url('images/gj-bg2.png')">
+        <div class="scjj-card-center">
+          <img class="scjj-icon" src="images/zhjr-icon.png" alt="智慧金融">
+          <div class="scjj-card-label">智慧金融机构</div>
+          <a href="#" class="scjj-card-more"><span>查看</span><img src="images/more-bai.png" alt="查看更多"></a>
+        </div>
+      </div>
+      <div class="scjj-card scjj-card-bg" style="background-image:url('images/gj-bg3.png')">
+        <div class="scjj-card-center">
+          <img class="scjj-icon" src="images/zhdb-icon.png" alt="智慧担保">
+          <div class="scjj-card-label">智慧担保融资</div>
+          <a href="#" class="scjj-card-more"><span>查看</span><img src="images/more-bai.png" alt="查看更多"></a>
+        </div>
+      </div>
+      <div class="scjj-card scjj-card-bg" style="background-image:url('images/gj-bg4.png')">
+        <div class="scjj-card-center">
+          <img class="scjj-icon" src="images/zhbx-icon.png" alt="智慧保险">
+          <div class="scjj-card-label">智慧保险</div>
+          <a href="#" class="scjj-card-more"><span>查看</span><img src="images/more-bai.png" alt="查看更多"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 招商推介 -->
+<section class="section zs-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/zstj-title.png" alt="招商推介" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">招商推介</span>
+        <span class="news-title-line"></span>
+      </div>
+    </div>
+    <div class="zs-cards">
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs1.png" alt="项目1">
+        <div class="zs-card-desc">【预招商】广西工商职业技术学院武鸣校区2号培训楼(西A-11栋)、大学生创新创业园(西A-12栋)预招商项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs2.png" alt="项目2">
+        <div class="zs-card-desc">【投资人招募】南宁·河池大厦项目投资人招募项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs3.png" alt="项目3">
+        <div class="zs-card-desc">【招商】贵港金投科技产业园、贵港金投智能科技产业园租赁项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs4.png" alt="项目4">
+        <div class="zs-card-desc">【招商】贵港市海晟投资有限公司位于贵港市城北新区C-9-3地块的48.89亩土地使用权转让项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs5.png" alt="项目5">
+        <div class="zs-card-desc">【招商】合浦县康兴雅苑农贸综合市场招租项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs6.png" alt="项目6">
+        <div class="zs-card-desc">【招商】贵港市钰晟投资有限公司位于贵港市城北新区A-40-1地块的57.451亩土地使用权转让项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs7.png" alt="项目7">
+        <div class="zs-card-desc">【预招商】广西国际商务职业技术学院明秀住宅小区临街商铺招商租赁(10年)项目</div>
+      </div>
+      <div class="zs-card">
+        <img class="zs-card-img" src="images/news/zs8.png" alt="项目8">
+        <div class="zs-card-desc">柳州市融水丹江雅筑项目5栋至16栋转让招商项目</div>
+      </div>
+    </div>
+    <!-- 将查看更多按钮移到zs-cards容器外面 -->
+    <div class="zs-more-btn-wrap">
+      <button class="zs-more-btn">
+        <span class="zs-more-btn-text">查看更多</span>
+        <img src="images/more-hei.png" alt="查看更多" class="zs-more-btn-arrow">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 专业服务 -->
+<section class="section zyfw-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/zyfw-title.png" alt="专业服务" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">专业服务</span>
+        <span class="news-title-line"></span>
+
+      </div>
+    </div>
+    <div class="zyfw-content">
+      <div class="zyfw-layout">
+        <!-- 左侧tab标签 -->
+        <div class="zyfw-tabs">
+          <div class="zyfw-tab active" data-tab="0">
+            <div class="zyfw-tab-icon">
+              <img src="images/tdch-icon.png" alt="土地测绘评估">
+            </div>
+            <div class="zyfw-tab-text">土地测绘评估</div>
+            <div class="zyfw-tab-logo">
+              <img src="images/zyfw-tab-logo.png" alt="专业服务">
+            </div>
+          </div>
+          <div class="zyfw-tab" data-tab="1">
+            <div class="zyfw-tab-icon">
+              <img src="images/lydc-icon.png" alt="林业调查设计">
+            </div>
+            <div class="zyfw-tab-text">林业调查设计</div>
+            <div class="zyfw-tab-logo">
+              <img src="images/zyfw-tab-logo.png" alt="专业服务">
+            </div>
+          </div>
+          <div class="zyfw-tab" data-tab="2">
+            <div class="zyfw-tab-icon">
+              <img src="images/kdwl-icon.png" alt="快递物流">
+            </div>
+            <div class="zyfw-tab-text">快递物流</div>
+            <div class="zyfw-tab-logo">
+              <img src="images/zyfw-tab-logo.png" alt="专业服务">
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧内容区域 -->
+        <div class="zyfw-main">
+          <!-- 土地测绘评估 -->
+          <div class="zyfw-panel active" data-tab="0">
+            <div class="zyfw-panel-bg">
+              <img src="images/zyfw-banner.png" alt="土地测绘评估背景">
+            </div>
+            <div class="zyfw-panel-overlay">
+              <div class="zyfw-panel-content">
+                <div class="zyfw-panel-text">
+                  <h3 class="zyfw-panel-title">土地测绘评估</h3>
+                  <p class="zyfw-panel-desc">提供专业的土地测绘、评估、规划等服务，确保精准可靠</p>
+                </div>
+                <div class="zyfw-panel-arrow">
+                  <img src="images/more-bai.png" alt="了解更多">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 林业调查设计 -->
+          <div class="zyfw-panel" data-tab="1">
+            <div class="zyfw-panel-bg">
+              <img src="images/zyfw-banner2.png" alt="林业调查设计背景">
+            </div>
+            <div class="zyfw-panel-overlay">
+              <div class="zyfw-panel-content">
+                <div class="zyfw-panel-text">
+                  <h3 class="zyfw-panel-title">林业调查设计</h3>
+                  <p class="zyfw-panel-desc">专业的林业资源调查、规划设计、技术咨询等服务</p>
+                </div>
+                <div class="zyfw-panel-arrow">
+                  <img src="images/more-bai.png" alt="了解更多">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 快递物流 -->
+          <div class="zyfw-panel" data-tab="2">
+            <div class="zyfw-panel-bg">
+              <img src="images/zyfw-banner3.png" alt="快递物流背景">
+            </div>
+            <div class="zyfw-panel-overlay">
+              <div class="zyfw-panel-content">
+                <div class="zyfw-panel-text">
+                  <h3 class="zyfw-panel-title">快递物流</h3>
+                  <p class="zyfw-panel-desc">高效便捷的快递物流服务，覆盖城乡配送网络</p>
+                </div>
+                <div class="zyfw-panel-arrow">
+                  <img src="images/more-bai.png" alt="了解更多">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 10. 相关单位 -->
+<section class="section xgdw-section">
+  <div class="main-container">
+    <div class="news-title-bar">
+      <div class="news-title-img-wrap">
+        <img class="news-title-img" src="images/xgdw-title.png" alt="相关单位" />
+      </div>
+      <div class="news-title-row">
+        <span class="news-title-line"></span>
+        <span class="news-title-text">相关单位</span>
+        <span class="news-title-line"></span>
+      </div>
+    </div>
+    <div class="xgdw-content">
+      <!-- 选项标签 -->
+      <div class="xgdw-tabs">
+        <div class="xgdw-tab active" data-tab="0">合作机构</div>
+        <div class="xgdw-tab" data-tab="1">市级平台</div>
+        <div class="xgdw-tab" data-tab="2">友情链接</div>
+      </div>
+
+      <!-- 卡片内容区域 -->
+      <div class="xgdw-cards">
+        <!-- 合作机构 -->
+        <div class="xgdw-card-list active" data-tab="0">
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="合作机构">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg2.png" alt="合作机构">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg3.png" alt="合作机构">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg4.png" alt="合作机构">
+          </div>
+        </div>
+        <!-- 市级平台 -->
+        <div class="xgdw-card-list" data-tab="1" style="display:none;">
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="市级平台1">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="市级平台2">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="市级平台3">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="市级平台4">
+          </div>
+        </div>
+        <!-- 友情链接 -->
+        <div class="xgdw-card-list" data-tab="2" style="display:none;">
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="友情链接1">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="友情链接2">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="友情链接3">
+          </div>
+          <div class="xgdw-card">
+            <img src="images/hzjg1.png" alt="友情链接4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. 页脚 -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- 主要内容区域 -->
+    <div class="footer-main">
+      <!-- 左侧区域 -->
+      <div class="footer-left">
+        <!-- 网站名称 -->
+        <div class="footer-title">广西供销大宗商品交易信息服务平台</div>
+
+        <!-- 联系方式 -->
+        <div class="footer-contact">
+          <div class="contact-item">
+            <span class="contact-label">服务热线：</span>
+            <span class="contact-value">0771-5852038</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">联系地址：</span>
+            <span class="contact-value">中国（广西）自由贸易试验区南宁片区五象大道403号富雅国际金融中心G1栋二十五层2513号</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">电子邮箱：</span>
+            <span class="contact-value">Lanyun123@gxlydd.cn</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">工作时间：</span>
+            <span class="contact-value">08:00-18:00（GMT+8）</span>
+          </div>
+        </div>
+
+        <!-- 公众号信息 -->
+        <div class="footer-qrcode">
+          <img src="images/gzh.png" alt="蓝云地带公众号" class="qrcode-img">
+          <div class="qrcode-text">蓝云地带公众号</div>
+        </div>
+      </div>
+
+      <!-- 右侧区域 -->
+      <div class="footer-right">
+        <!-- 网站大纲 -->
+        <div class="footer-sitemap">
+          <!-- 第一行 -->
+          <div class="sitemap-row">
+            <div class="sitemap-column">
+              <div class="sitemap-title">资讯动态</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">中心动态</a>
+                <a href="#" class="sitemap-link">行业资讯</a>
+                <a href="#" class="sitemap-link">通知公告</a>
+                <a href="#" class="sitemap-link">政策法规</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">交易大厅</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">农村产权交易</a>
+                <a href="#" class="sitemap-link">供销大宗商品交易</a>
+                <a href="#" class="sitemap-link">拍卖大厅</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">智慧政务</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">智慧林业</a>
+                <a href="#" class="sitemap-link">智慧农业农村</a>
+                <a href="#" class="sitemap-link">智慧税务</a>
+                <a href="#" class="sitemap-link">智慧自然资源</a>
+                <a href="#" class="sitemap-link">智慧不动产中心</a>
+                <a href="#" class="sitemap-link">智慧住建</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">供应链金融</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">智慧人民银行</a>
+                <a href="#" class="sitemap-link">智慧金融</a>
+                <a href="#" class="sitemap-link">智慧担保</a>
+                <a href="#" class="sitemap-link">智慧保险</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">招商推介</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">产权转让</a>
+                <a href="#" class="sitemap-link">企业增资</a>
+                <a href="#" class="sitemap-link">资产转让</a>
+                <a href="#" class="sitemap-link">资产出租</a>
+                <a href="#" class="sitemap-link">招投标</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第二行 -->
+          <div class="sitemap-row">
+            <div class="sitemap-column">
+              <div class="sitemap-title">专业服务</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">土地测绘评估</a>
+                <a href="#" class="sitemap-link">林业调查设计</a>
+                <a href="#" class="sitemap-link">快递物流</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">智慧基金</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">发展村级集体经济基金</a>
+                <a href="#" class="sitemap-link">社会福利基金</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">党建动态</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">党建要闻</a>
+                <a href="#" class="sitemap-link">党风廉政建设</a>
+                <a href="#" class="sitemap-link">专题专栏</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <div class="sitemap-title">关于我们</div>
+              <div class="sitemap-links">
+                <a href="#" class="sitemap-link">中心简介</a>
+                <a href="#" class="sitemap-link">组织架构</a>
+                <a href="#" class="sitemap-link">发展历程</a>
+              </div>
+            </div>
+            <div class="sitemap-column">
+              <!-- 空列，保持对齐 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 版权信息区域 -->
+    <div class="footer-copyright">
+      <div class="copyright-left">
+        <span class="copyright-text">2025 广西蓝云地带信息科技集团有限公司 版权所有</span>
+      </div>
+      <div class="copyright-right">
+        <a href="#" class="copyright-link">隐私政策</a>
+        <span class="copyright-separator">|</span>
+        <a href="#" class="copyright-link">使用条款</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- 地市选择弹窗 -->
+<div class="city-modal-mask" style="display:none;"></div>
+<div class="city-modal" style="display:none;">
+  <div class="city-modal-header">
+      <span class="city-modal-recent">最近切换区域：
+        <span class="city-modal-recent-list">
+          <span class="city-modal-recent-item">百色市</span>
+          <span class="city-modal-recent-item">南宁市</span>
+          <span class="city-modal-recent-item">柳州市</span>
+        </span>
+        <span class="city-modal-recent-clear">清空</span>
+      </span>
+  </div>
+  <div class="city-modal-divider"></div>
+  <div class="city-modal-list">
+    <div class="city-modal-cities">
+      <span class="city-modal-city-btn active">全广西</span>
+      <span class="city-modal-city-btn">南宁市</span>
+      <span class="city-modal-city-btn">柳州市</span>
+      <span class="city-modal-city-btn">桂林市</span>
+      <span class="city-modal-city-btn">梧州市</span>
+      <span class="city-modal-city-btn">北海市</span>
+      <span class="city-modal-city-btn">防城港市</span>
+      <span class="city-modal-city-btn">钦州市</span>
+      <span class="city-modal-city-btn">贵港市</span>
+      <span class="city-modal-city-btn">玉林市</span>
+      <span class="city-modal-city-btn">百色市</span>
+      <span class="city-modal-city-btn">贺州市</span>
+      <span class="city-modal-city-btn">河池市</span>
+      <span class="city-modal-city-btn">来宾市</span>
+      <span class="city-modal-city-btn">崇左市</span>
+    </div>
+  </div>
+  <div class="city-modal-divider"></div>
+  <div class="city-modal-selected-footer">
+    <div class="city-modal-selected">您的选择是：<span class="city-modal-selected-text">广西壮族自治区 / 南宁市</span></div>
+    <div class="city-modal-footer">
+      <button class="city-modal-btn city-modal-cancel">取消</button>
+      <button class="city-modal-btn city-modal-confirm">确认</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 初始化图表实例
+  var chart = echarts.init(document.getElementById('gxMap'));
+
+  // 加载广西地级市级别地图 GeoJSON
+  fetch('json/guangxi.json')
+          .then(res => res.json())
+          .then(geoJson => {
+            // 注册地图
+            echarts.registerMap('guangxi', geoJson);
+
+            // 设置图表配置项
+            chart.setOption({
+              // title: {
+              //   text: '广西地级市地图',
+              //   left: 'center'
+              // },
+              tooltip: {
+                trigger: 'item',
+                formatter: '{b}'
+              },
+              visualMap: {
+                show: false, // 隐藏图例
+                min: 0,
+                max: 100,
+                inRange: {
+                  color: ['#E6F5EC', '#009944']
+                }
+              },
+              series: [{
+                name: '市级数据',
+                type: 'map',
+                map: 'guangxi',
+                roam: true,
+                label: {
+                  show: true,
+                  fontSize: 12
+                },
+                emphasis: {
+                  label: {
+                    show: true,
+                    fontWeight: 'bold'
+                  }
+                },
+                data: [
+                  { name: '南宁市', value: 85 },
+                  { name: '柳州市', value: 70 },
+                  { name: '桂林市', value: 65 },
+                  { name: '梧州市', value: 50 },
+                  { name: '北海市', value: 60 },
+                  { name: '防城港市', value: 40 },
+                  { name: '钦州市', value: 55 },
+                  { name: '贵港市', value: 45 },
+                  { name: '玉林市', value: 52 },
+                  { name: '百色市', value: 48 },
+                  { name: '贺州市', value: 43 },
+                  { name: '河池市', value: 58 },
+                  { name: '来宾市', value: 46 },
+                  { name: '崇左市', value: 49 }
+                ]
+              }]
+            });
+
+          })
+          .catch(err => {
+            console.error('地图加载失败：', err);
+          });
+</script>
+<script src="js/script.js"></script>
+<script src="js/zhjj.js"></script>
+</body>
+
+</html>
